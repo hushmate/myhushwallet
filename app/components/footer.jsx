@@ -35,7 +35,7 @@ export default class ZFooter extends React.Component {
             <a href="https://myhush.org/">website</a><br/>
             <a href="http://dashboard.myhush.org/">dashboard</a><br/>
             <a href="https://github.com/MyHush/myhushwallet">github</a><br/>
-            <a href="http://myhush.org/discord">discord</a><br/>
+            <a href="http://myhush.org/discord/">discord</a><br/>
           </Col>
         </Row>
         </Container>
