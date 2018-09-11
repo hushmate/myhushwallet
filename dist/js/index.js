@@ -33753,7 +33753,7 @@ var ZFooter = function (_React$Component) {
                 ' or join our ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'http://myhush.org/discord' },
+                  { href: 'http://myhush.org/discord/' },
                   'Discord'
                 ),
                 ' server!'
@@ -33800,7 +33800,7 @@ var ZFooter = function (_React$Component) {
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'http://myhush.org/discord' },
+                { href: 'http://myhush.org/discord/' },
                 'discord'
               ),
               _react2.default.createElement('br', null)
