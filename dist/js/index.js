@@ -33783,25 +33783,25 @@ var ZFooter = function (_React$Component) {
               _react2.default.createElement(
                 'a',
                 { href: 'https://myhush.org/' },
-                'website'
+                'Website'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
                 { href: 'http://dashboard.myhush.org/' },
-                'dashboard'
+                'Dashboard'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
                 { href: 'https://github.com/MyHush/myhushwallet' },
-                'github'
+                'Github'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
                 { href: 'http://myhush.org/discord/' },
-                'discord'
+                'Discord'
               ),
               _react2.default.createElement('br', null)
             )
