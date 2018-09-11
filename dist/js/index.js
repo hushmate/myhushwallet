@@ -33788,12 +33788,6 @@ var ZFooter = function (_React$Component) {
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'a',
-                { href: 'https://forum.myhush.org/' },
-                'forum'
-              ),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'a',
                 { href: 'http://dashboard.myhush.org/' },
                 'dashboard'
               ),
