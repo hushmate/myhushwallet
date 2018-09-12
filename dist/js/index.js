@@ -76869,7 +76869,7 @@ var ZSendHUSH = function (_React$Component6) {
               _react2.default.createElement(
                 _reactstrap.Alert,
                 { color: 'danger' },
-                'ALWAYS VALIDATE YOUR DESINATION ADDRESS BY SENDING SMALL AMOUNTS OF HUSH FIRST'
+                'ALWAYS VALIDATE YOUR DESTINATION ADDRESS BY SENDING SMALL AMOUNTS OF HUSH FIRST'
               ),
               _react2.default.createElement(
                 _reactstrap.InputGroup,
