@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gilardh/myhushwallet/precache-manifest.f6f139e9fd36a71c895710833d4ecfb1.js"
+  "/myhushwallet/precache-manifest.cdec032b0d11456823d627772f9287ee.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/gilardh/myhushwallet/index.html", {
+workbox.routing.registerNavigationRoute("/myhushwallet/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

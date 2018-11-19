@@ -1,15 +1,15 @@
 {
-  "main.css": "/gilardh/myhushwallet/static/css/main.9679771b.chunk.css",
-  "main.js": "/gilardh/myhushwallet/static/js/main.a306f95f.chunk.js",
-  "main.js.map": "/gilardh/myhushwallet/static/js/main.a306f95f.chunk.js.map",
-  "static/css/1.336fd1cd.chunk.css": "/gilardh/myhushwallet/static/css/1.336fd1cd.chunk.css",
-  "static/js/1.652c0122.chunk.js": "/gilardh/myhushwallet/static/js/1.652c0122.chunk.js",
-  "static/js/1.652c0122.chunk.js.map": "/gilardh/myhushwallet/static/js/1.652c0122.chunk.js.map",
-  "runtime~main.js": "/gilardh/myhushwallet/static/js/runtime~main.adbc5f70.js",
-  "runtime~main.js.map": "/gilardh/myhushwallet/static/js/runtime~main.adbc5f70.js.map",
-  "static/css/1.336fd1cd.chunk.css.map": "/gilardh/myhushwallet/static/css/1.336fd1cd.chunk.css.map",
-  "static/css/main.9679771b.chunk.css.map": "/gilardh/myhushwallet/static/css/main.9679771b.chunk.css.map",
-  "index.html": "/gilardh/myhushwallet/index.html",
-  "precache-manifest.f6f139e9fd36a71c895710833d4ecfb1.js": "/gilardh/myhushwallet/precache-manifest.f6f139e9fd36a71c895710833d4ecfb1.js",
-  "service-worker.js": "/gilardh/myhushwallet/service-worker.js"
+  "main.css": "/myhushwallet/static/css/main.9679771b.chunk.css",
+  "main.js": "/myhushwallet/static/js/main.41ec62c6.chunk.js",
+  "main.js.map": "/myhushwallet/static/js/main.41ec62c6.chunk.js.map",
+  "static/css/1.336fd1cd.chunk.css": "/myhushwallet/static/css/1.336fd1cd.chunk.css",
+  "static/js/1.089d4378.chunk.js": "/myhushwallet/static/js/1.089d4378.chunk.js",
+  "static/js/1.089d4378.chunk.js.map": "/myhushwallet/static/js/1.089d4378.chunk.js.map",
+  "runtime~main.js": "/myhushwallet/static/js/runtime~main.46a337f0.js",
+  "runtime~main.js.map": "/myhushwallet/static/js/runtime~main.46a337f0.js.map",
+  "static/css/main.9679771b.chunk.css.map": "/myhushwallet/static/css/main.9679771b.chunk.css.map",
+  "static/css/1.336fd1cd.chunk.css.map": "/myhushwallet/static/css/1.336fd1cd.chunk.css.map",
+  "index.html": "/myhushwallet/index.html",
+  "precache-manifest.cdec032b0d11456823d627772f9287ee.js": "/myhushwallet/precache-manifest.cdec032b0d11456823d627772f9287ee.js",
+  "service-worker.js": "/myhushwallet/service-worker.js"
 }
