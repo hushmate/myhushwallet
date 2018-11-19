@@ -1,0 +1,2 @@
+body{margin:0;padding:0;font-family:Roboto,sans-serif;background-color:#f5f5f5}:focus{outline:0;outline:none}.App{text-align:center}.Hamburger{padding-left:20px}.Hamburger,.Header{cursor:pointer;padding-right:20px}.Header{float:right}.FadeIn{animation:fadein 2s;-moz-animation:fadein 2s;-webkit-animation:fadein 2s;-o-animation:fadein 2s}@keyframes fadein{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{0%{opacity:0}to{opacity:1}}
+/*# sourceMappingURL=main.9679771b.chunk.css.map */
