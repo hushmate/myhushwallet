@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/myhushwallet/precache-manifest.cdec032b0d11456823d627772f9287ee.js"
+  "/myhushwallet/precache-manifest.16cb86f17345c545547d2359d06f33fd.js"
 );
 
 workbox.clientsClaim();
