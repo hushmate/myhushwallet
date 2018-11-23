@@ -634,7 +634,7 @@ class ZSendHUSH extends React.Component {
       axios.get(infoURL)
       .then(function (info_resp){
         this.setProgressValue(50)
-        const info_data = info_resp.data
+        //const info_data = info_resp.data
 
 
           // Iterate through each utxo
