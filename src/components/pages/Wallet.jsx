@@ -1,4 +1,4 @@
-import { Alert, Form, FormText, ButtonGroup, UncontrolledAlert, Tooltip, CardBlock, CardFooter, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem, Badge, Progress, FormGroup, Label, Container, Jumbotron, TabContent, InputGroup, Input, InputGroupAddon, InputGroupButton, Table, TabPane, Nav, NavItem, NavLink, Card, CardSubtitle, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Alert, Form, FormText, ButtonGroup, UncontrolledAlert, Tooltip, CardBlock, CardFooter, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem, Badge, Progress, FormGroup, Label, Container, Jumbotron, TabContent, InputGroup, Input, InputGroupAddon, Table, TabPane, Nav, NavItem, NavLink, Card, CardSubtitle, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 
 import axios from 'axios'
 import React from 'react'
@@ -7,8 +7,8 @@ import classnames from 'classnames'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import ReactTable from 'react-table'
 import hushjs from 'hushjs'
-import hushwalletutils from '../lib/utils.js'
-import hdwallet from '../lib/hdwallet.js'
+import hushwalletutils from '../lib/utils'
+import hdwallet from '../lib/hdwallet'
 import FileSaver from 'file-saver'
 
 
@@ -97,11 +97,11 @@ class ZWalletGenerator extends React.Component {
         <br/>
         <InputGroup>                      
           <Input value={this.state.privateKey} placeholder="Private key generated from password phrase" />              
-          <InputGroupButton>
+          <InputGroupAddon>
             <CopyToClipboard text={this.state.privateKey}>
-              <Button><MdContentCopy/></Button>
+            <Button><MdContentCopy/></Button>
             </CopyToClipboard>
-          </InputGroupButton>
+          </InputGroupAddon>
         </InputGroup>        
       </div>
     )
@@ -234,11 +234,11 @@ class ZWalletUnlockKey extends React.Component {
         <div>
           {this.state.invalidPrivateKey ? <Alert color="danger"><strong>Error.</strong>&nbsp;Invalid private key</Alert> : ''}
           <InputGroup>                                       
-            <InputGroupButton>
+            <InputGroupAddon>
               <Button id={4}
                 onClick={this.toggleShowPassword}             
               >{this.state.showPassword? <FaEye/> : <FaEyeSlash/>}</Button>
-            </InputGroupButton>
+            </InputGroupAddon>
             <Input
               type={this.state.showPassword ? "text" : "password"}
               onChange={(e) => this.props.setPrivateKeys([e.target.value])} // Set it in a list so we can map over it later
@@ -258,11 +258,11 @@ class ZWalletUnlockKey extends React.Component {
           <Alert color="warning"><strong>Warning.</strong>&nbsp;Make sure you have saved your secret phrase somewhere.</Alert>
           {this.state.secretPhraseTooShort ? <Alert color="danger"><strong>Error.</strong>&nbsp;Secret phrase too short</Alert> : '' }
           <InputGroup>                                       
-            <InputGroupButton>
+            <InputGroupAddon>
               <Button id={7}
                 onClick={this.toggleShowPassword}                
               >{this.state.showPassword? <FaEye/> : <FaEyeSlash/>}</Button>
-            </InputGroupButton>
+            </InputGroupAddon>
             <Input
               type={this.state.showPassword ? "text" : "password"}
               maxLength="64"
