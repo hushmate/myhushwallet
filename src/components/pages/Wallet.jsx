@@ -913,7 +913,8 @@ class ZWalletTabs extends React.Component {
 
     Object.keys(this.props.publicAddresses).forEach(function(key) {
       fileStr += this.props.publicAddresses[key].privateKeyWIF
-      fileStr += ' ' + now + ' ' + 'label=' + ' ' + '# addr=' + key
+      //fileStr += ' ' + now + ' ' + 'label=' + ' ' + '# addr=' + key
+      fileStr += ' ' + now + ' label= # addr=' + key
       fileStr += '\n'
     }.bind(this))
     
