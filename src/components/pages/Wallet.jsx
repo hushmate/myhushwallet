@@ -1,4 +1,4 @@
-import { Alert, Form, FormText, ButtonGroup, UncontrolledAlert, Tooltip, CardBlock, CardFooter, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem, Badge, Progress, FormGroup, Label, Container, Jumbotron, TabContent, InputGroup, Input, InputGroupAddon, Table, TabPane, Nav, NavItem, NavLink, Card, CardSubtitle, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Alert, Form, FormText, ButtonGroup, Tooltip, CardBlock, CardFooter, Modal, ModalHeader, ModalBody, ModalFooter, Progress, FormGroup, Label, Container, TabContent, InputGroup, Input, InputGroupAddon, TabPane, Nav, NavItem, NavLink, Card, Button, Row, Col } from 'reactstrap';
 
 import axios from 'axios'
 import React from 'react'
@@ -14,7 +14,7 @@ import FileSaver from 'file-saver'
 
 //new import style
 import { MdContentCopy, MdSettings } from 'react-icons/md/'
-import { FaRedo, FaUnlock, FaEyeSlash, FaEye } from 'react-icons/fa'
+import { FaRedo, FaEyeSlash, FaEye } from 'react-icons/fa'
 
 import pjson from '../../../package.json'
 
