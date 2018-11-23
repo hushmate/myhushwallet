@@ -204,7 +204,7 @@ class ZWalletUnlockKey extends React.Component {
   }
 
   render () {
-    if (this.props.unlockType == UNLOCK_WALLET_TYPE.IMPORT_WALLET){
+    if (this.props.unlockType === UNLOCK_WALLET_TYPE.IMPORT_WALLET){
       return (
         <Form>
           <FormGroup row>            
@@ -229,7 +229,7 @@ class ZWalletUnlockKey extends React.Component {
       )
     }
 
-    else if (this.props.unlockType == UNLOCK_WALLET_TYPE.PASTE_PRIV_KEY){
+    else if (this.props.unlockType === UNLOCK_WALLET_TYPE.PASTE_PRIV_KEY){
       return (
         <div>
           {this.state.invalidPrivateKey ? <Alert color="danger"><strong>Error.</strong>&nbsp;Invalid private key</Alert> : ''}
@@ -252,7 +252,7 @@ class ZWalletUnlockKey extends React.Component {
       )
     }
 
-    else if (this.props.unlockType == UNLOCK_WALLET_TYPE.HD_WALLET){
+    else if (this.props.unlockType === UNLOCK_WALLET_TYPE.HD_WALLET){
       return (
         <div>
           <Alert color="warning"><strong>Warning.</strong>&nbsp;Make sure you have saved your secret phrase somewhere.</Alert>
@@ -640,7 +640,7 @@ class ZSendHUSH extends React.Component {
           // Iterate through each utxo
           // append it to history
           for (var i = 0; i < tx_data.length; i ++){
-            if (tx_data[i].confirmations == 0){
+            if (tx_data[i].confirmations === 0){
               continue;
             }
 
