@@ -1,7 +1,7 @@
 var bitcoinjs = require('bitcoinjs-lib');
 var bip32utils = require('bip32-utils');
-var hushjs = require('hushjs');
-var bs58check = require('bs58check');
+//var hushjs = require('hushjs');
+//var bs58check = require('bs58check');
 
 // Hierarchical Deterministic wallet
 function phraseToHDWallet(phraseStr) {
