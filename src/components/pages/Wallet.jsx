@@ -1,4 +1,4 @@
-import { Alert, Form, FormText, ButtonGroup, Tooltip, CardBlock, CardFooter, Modal, ModalHeader, ModalBody, ModalFooter, Progress, FormGroup, Label, Container, TabContent, InputGroup, Input, InputGroupAddon, TabPane, Nav, NavItem, NavLink, Card, Button, Row, Col } from 'reactstrap';
+import { Alert, Form, FormText, ButtonGroup, Tooltip, CardBody, CardFooter, Modal, ModalHeader, ModalBody, ModalFooter, Progress, FormGroup, Label, Container, TabContent, InputGroup, Input, InputGroupAddon, TabPane, Nav, NavItem, NavLink, Card, Button, Row, Col } from 'reactstrap';
 
 import axios from 'axios'
 import React from 'react'
@@ -448,16 +448,16 @@ class ZAddressInfo extends React.Component {
       <Row>
         <Col>     
           <Card>
-            <CardBlock>                                                          
+            <CardBody>                                                          
               {this.state.retrieveAddressError ?
               <Alert color="danger">Error connecting to the Insight API. Double check the Insight API supplied in settings.</Alert>
               :
               <Alert color="warning">The balance displayed here is dependent on the insight node.<br/>Automatically updates every 5 minutes. Alternatively, you can <a href="#" onClick={() => this.updateAddressesInfo()}>forcefully refresh</a> them.</Alert>
               }                                          
-            </CardBlock>
+            </CardBody>
           </Card>  
           <Card>
-            <CardBlock>
+            <CardBody>
               <ReactTable
                 columns={[{
                   Header: 'Total Confirmed',
@@ -480,16 +480,16 @@ class ZAddressInfo extends React.Component {
 
                 minRows={1}
               />
-            </CardBlock>
+            </CardBody>
           </Card>          
           <Card>
-            <CardBlock>                                            
+            <CardBody>                                            
               <ReactTable
                 data={addresses} columns={addressColumns}
                 minRows={addresses.length > 20 ? 20 : addresses.length}
                 showPagination={addresses.length > 20}
               />
-            </CardBlock>
+            </CardBody>
           </Card>
         </Col>
       </Row>
@@ -745,7 +745,7 @@ class ZSendHUSH extends React.Component {
       <Row>
         <Col>
           <Card>
-            <CardBlock>       
+            <CardBody>       
               <Alert color="danger">ALWAYS VALIDATE YOUR DESTINATION ADDRESS BY SENDING SMALL AMOUNTS OF HUSH FIRST</Alert>              
               <InputGroup>
                 <InputGroupAddon>From Address</InputGroupAddon>
@@ -779,7 +779,7 @@ class ZSendHUSH extends React.Component {
                 disabled={!this.state.confirmSend || (this.state.sendProgress > 0 && this.state.sendProgress < 100)}
                 onClick={this.handleSendHUSH}
               >Send</Button>
-            </CardBlock>
+            </CardBody>
             <CardFooter> 
               {hushTxLink}
               <Progress value={this.state.sendProgress} />                                  
@@ -913,7 +913,6 @@ class ZWalletTabs extends React.Component {
 
     Object.keys(this.props.publicAddresses).forEach(function(key) {
       fileStr += this.props.publicAddresses[key].privateKeyWIF
-      //fileStr += ' ' + now + ' ' + 'label=' + ' ' + '# addr=' + key
       fileStr += ' ' + now + ' label= # addr=' + key
       fileStr += '\n'
     }.bind(this))
@@ -969,16 +968,16 @@ class ZWalletTabs extends React.Component {
             <Row>
               <Col>
                 <Card>                  
-                  <CardBlock>
+                  <CardBody>
                     <ZPrintableKeys publicAddresses={this.props.publicAddresses}/>                  
-                  </CardBlock>                  
-                  <CardBlock>
+                  </CardBody>                  
+                  <CardBody>
                     <h3>Private Key Dump</h3>
                     <Button 
                       color="secondary" className="btn-block"
                       onClick={this.savePrivateKeys}                  
                     >Download Private Keys</Button>
-                  </CardBlock>
+                  </CardBody>
                 </Card>
               </Col>
             </Row>
