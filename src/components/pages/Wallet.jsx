@@ -1057,7 +1057,7 @@ export default class ZWallet extends React.Component {
           c_pk_wif = hushjs.address.privKeyToWIF(c_pk)
         }          
 
-        var c_pk_wif = hushjs.address.privKeyToWIF(c_pk, true, pubKeyHash)        
+        c_pk_wif = hushjs.address.privKeyToWIF(c_pk, true, pubKeyHash)        
         const c_addr = _privKeyToAddr(c_pk, this.state.settings.compressPubKey, this.state.settings.useTestNet)        
 
         publicAddresses[c_addr] = {
