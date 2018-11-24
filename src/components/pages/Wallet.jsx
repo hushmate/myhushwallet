@@ -635,11 +635,11 @@ class ZSendHUSH extends React.Component {
       .then(function (info_resp){
         this.setProgressValue(50)
         //const info_data = info_resp.data
-
+        var i
 
           // Iterate through each utxo
           // append it to history
-          for (var i = 0; i < tx_data.length; i ++){
+          for (i = 0; i < tx_data.length; i ++){
             if (tx_data[i].confirmations === 0){
               continue;
             }
@@ -675,7 +675,7 @@ class ZSendHUSH extends React.Component {
           var txObj = hushjs.transaction.createRawTx(history, recipients)
 
           // Sign each history transcation          
-          for (var i = 0; i < history.length; i ++){
+          for (i = 0; i < history.length; i ++){
             txObj = hushjs.transaction.signTx(txObj, i, senderPrivateKey, this.props.settings.compressPubKey)
           }
 
