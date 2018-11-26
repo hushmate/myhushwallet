@@ -441,18 +441,20 @@ class ZAddressInfo extends React.Component {
     }, {
       Header: 'Confirmed',
       accessor: 'confirmedBalance',
+      maxWidth: 166,
       headerStyle: {
-        textAlign: "left",
+        textAlign: "right",
       },
-      style: { textAlign: "left" },
+      style: { textAlign: "right" },
       Cell: props => <span className='number'>{props.value}</span>
     }, {
       Header: 'Unconfirmed',
       accessor: 'unconfirmedBalance',
+      maxWidth: 166,
       headerStyle: {
-        textAlign: "left",
+        textAlign: "right",
       },
-      style: { textAlign: "left" },
+      style: { textAlign: "right" },
       Cell: props => <span className='number'>{props.value}</span>
     }]
 
