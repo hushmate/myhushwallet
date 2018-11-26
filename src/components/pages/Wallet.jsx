@@ -431,16 +431,28 @@ class ZAddressInfo extends React.Component {
 
     const addressColumns = [{
       Header: 'Address',
-      accessor: 'address',      
+      accessor: 'address',
+      headerStyle: {
+        textAlign: "left",
+      },
+      style: { textAlign: "left" },     
       resizable: true,
       Cell: props => <a href={this.getAddressBlockExplorerURL(props.value)}>{props.value}</a>
     }, {
       Header: 'Confirmed',
       accessor: 'confirmedBalance',
+      headerStyle: {
+        textAlign: "left",
+      },
+      style: { textAlign: "left" },
       Cell: props => <span className='number'>{props.value}</span>
     }, {
       Header: 'Unconfirmed',
       accessor: 'unconfirmedBalance',
+      headerStyle: {
+        textAlign: "left",
+      },
+      style: { textAlign: "left" },
       Cell: props => <span className='number'>{props.value}</span>
     }]
 
@@ -462,10 +474,21 @@ class ZAddressInfo extends React.Component {
                 columns={[{
                   Header: 'Total Confirmed',
                   accessor: 'totalConfirmed',
+                  headerStyle: {
+                    textAlign: "center",
+                    //fontWeight: "bold",
+                    //backgroundColor: "white",
+                    //color: "white"
+                  },
+                  style: { textAlign: "center" },
                   Cell: props => <span className='number'>{props.value}</span>
                 }, {
                   Header: 'Total Unconfirmed',
                   accessor: 'totalUnconfirmed',
+                  headerStyle: {
+                    textAlign: "center",
+                  },
+                  style: { textAlign: "center" },
                   Cell: props => <span className='number'>{props.value}</span>
                 }]}
 
