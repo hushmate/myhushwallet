@@ -1,15 +1,15 @@
 {
   "main.css": "/myhushwallet/static/css/main.2d55c632.chunk.css",
-  "main.js": "/myhushwallet/static/js/main.d76d9d33.chunk.js",
-  "main.js.map": "/myhushwallet/static/js/main.d76d9d33.chunk.js.map",
+  "main.js": "/myhushwallet/static/js/main.ec3ded34.chunk.js",
+  "main.js.map": "/myhushwallet/static/js/main.ec3ded34.chunk.js.map",
   "static/css/1.698c98d8.chunk.css": "/myhushwallet/static/css/1.698c98d8.chunk.css",
   "static/js/1.61f1f790.chunk.js": "/myhushwallet/static/js/1.61f1f790.chunk.js",
   "static/js/1.61f1f790.chunk.js.map": "/myhushwallet/static/js/1.61f1f790.chunk.js.map",
   "runtime~main.js": "/myhushwallet/static/js/runtime~main.46a337f0.js",
   "runtime~main.js.map": "/myhushwallet/static/js/runtime~main.46a337f0.js.map",
-  "static/css/main.2d55c632.chunk.css.map": "/myhushwallet/static/css/main.2d55c632.chunk.css.map",
   "static/css/1.698c98d8.chunk.css.map": "/myhushwallet/static/css/1.698c98d8.chunk.css.map",
+  "static/css/main.2d55c632.chunk.css.map": "/myhushwallet/static/css/main.2d55c632.chunk.css.map",
   "index.html": "/myhushwallet/index.html",
-  "precache-manifest.f96a9f03066f03ada7224b896bf42bf0.js": "/myhushwallet/precache-manifest.f96a9f03066f03ada7224b896bf42bf0.js",
+  "precache-manifest.6e44df13631fa31367d51ac3cfd90de3.js": "/myhushwallet/precache-manifest.6e44df13631fa31367d51ac3cfd90de3.js",
   "service-worker.js": "/myhushwallet/service-worker.js"
 }
