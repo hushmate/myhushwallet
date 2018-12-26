@@ -10,8 +10,6 @@ import { Github }  from "../images/svg";
 import { Hush }  from "../images/svg";
 import { Menu }  from "../images/svg";
 
-
-
 const ColoredLine = ({ color }) => (
   <hr
       style={{
@@ -21,7 +19,6 @@ const ColoredLine = ({ color }) => (
       }}
   />
 );
-
 
 const styles = {
   center: {
@@ -37,8 +34,10 @@ const styles = {
   bold: {
     fontWeight: 'bold'
   },
+  marginRight: {
+    margin: '10px'
+  }
 };
-
 
 export default class ZContact extends React.Component {
   render() {
@@ -60,15 +59,15 @@ export default class ZContact extends React.Component {
             <p>
               <br/>
               <br/>
-              <p style={styles.center}>
                 <div>
+                <p style={styles.center}>
                   <a href="https://myhush.org/discord/index.html"><Discord size='60'/></a>
-                  <a href=""><Twitter size='60'/></a>
-                  <a href=""><Reddit size='60'/></a>
-                  <a href=""><Bitcointalk size='60'/></a>
-                  <a href=""><Github size='60'/></a>
+                  <a href="https://twitter.com/MyHushTeam"><Twitter size='60'/></a>
+                  <a href="https://reddit.com/r/Myhush"><Reddit size='60'/></a>
+                  <a href="https://bitcointalk.org/index.php?topic=2008578.0"><Bitcointalk size='60'/></a>
+                  <a href="https://github.com/MyHush"><Github size='60'/></a>
+                </p>
                 </div>
-              </p>
              </p>
           </Col>
         </Row>
