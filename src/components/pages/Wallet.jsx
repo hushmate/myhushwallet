@@ -12,9 +12,11 @@ import hdwallet from '../lib/hdwallet'
 import FileSaver from 'file-saver'
 
 
-//new import style
-import { MdContentCopy, MdSettings } from 'react-icons/md/'
-import { FaRedo, FaEyeSlash, FaEye } from 'react-icons/fa'
+import { Setting }  from "../images/svg";
+import { Eye }  from "../images/svg";
+import { EyeSlash }  from "../images/svg";
+import { Redo }  from "../images/svg";
+import { ContentCopy }  from "../images/svg";
 
 import pjson from '../../../package.json'
 
@@ -99,7 +101,7 @@ class ZWalletGenerator extends React.Component {
           <Input value={this.state.privateKey} placeholder="Private key generated from password phrase" />              
           <InputGroupAddon>
             <CopyToClipboard text={this.state.privateKey}>
-            <Button><MdContentCopy/></Button>
+            <Button><ContentCopy size='15' color='#fff'/></Button>
             </CopyToClipboard>
           </InputGroupAddon>
         </InputGroup>        
@@ -237,7 +239,7 @@ class ZWalletUnlockKey extends React.Component {
             <InputGroupAddon>
               <Button id={4}
                 onClick={this.toggleShowPassword}             
-              >{this.state.showPassword? <FaEye/> : <FaEyeSlash/>}</Button>
+              >{this.state.showPassword? <Eye size='15' color='#fff'/> : <EyeSlash size='15' color='#fff'/>}</Button>
             </InputGroupAddon>
             <Input
               type={this.state.showPassword ? "text" : "password"}
@@ -261,7 +263,7 @@ class ZWalletUnlockKey extends React.Component {
             <InputGroupAddon>
               <Button id={7}
                 onClick={this.toggleShowPassword}                
-              >{this.state.showPassword? <FaEye/> : <FaEyeSlash/>}</Button>
+              >{this.state.showPassword? <Eye size='15' color='#fff'/> : <EyeSlash size='15' color='#fff'/>}</Button>
             </InputGroupAddon>
             <Input
               type={this.state.showPassword ? "text" : "password"}
@@ -1208,8 +1210,8 @@ export default class ZWallet extends React.Component {
         <Row>
           <Col>
             <h1 >
-              <ToolTipButton onClick={this.toggleShowSettings} id={1} buttonText={<MdSettings/>} tooltipText={'settings'}/>&nbsp;
-              <ToolTipButton disabled={this.state.publicAddresses === null} onClick={this.resetKeys} id={2} buttonText={<FaRedo/>} tooltipText={'reset wallet'}/>
+              <ToolTipButton onClick={this.toggleShowSettings} id={1} buttonText={<Setting size='15' color='#fff'/>} tooltipText={'settings'}/>&nbsp;
+              <ToolTipButton disabled={this.state.publicAddresses === null} onClick={this.resetKeys} id={2} buttonText={<Redo size='15' color='#fff'/>} tooltipText={'reset wallet'}/>
             </h1>
             <ZWalletSettings 
               setUnlockType={this.setUnlockType}              

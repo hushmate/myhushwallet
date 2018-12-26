@@ -6,14 +6,8 @@ import SideBarContent from './SideBarContent'
 import MainRouter from './MainRouter'
 import SideBarPanel from './SideBarPanel'
 
-// Font Awesome icons
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-// Adding all icons to the library
-library.add(fas, far, fab)
+import { Menu }  from './images/svg';
+import { Hush }  from "./images/svg";
 
 const styles = {
   contentHeaderMenuLink: {
@@ -95,10 +89,10 @@ class App extends Component {
             href="Menu"
             style={styles.contentHeaderMenuLink}
           >
-            <FontAwesomeIcon icon={'bars'} style={styles.headerIcons} />
+            <Menu size='30' style={styles.headerIcons} />
           </a>
         )}
-        <span> Hush Wallet</span>
+        <Hush size='30' color='#fff'/><span> Hush Wallet</span>
       </span>
     )
 
