@@ -6,11 +6,14 @@ import QRCode from 'qrcode.react';
 import classnames from 'classnames'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import ReactTable from 'react-table'
-import hushjs from 'hushjs'
+
+import address from '../lib/hushjs/address'
+import config from '../lib/hushjs/config'
+import transaction from '../lib/hushjs/transaction'
+
 import hushwalletutils from '../lib/utils'
 import hdwallet from '../lib/hdwallet'
 import FileSaver from 'file-saver'
-
 
 import { Setting }  from "../images/svg";
 import { Eye }  from "../images/svg";
@@ -74,10 +77,10 @@ class ZWalletGenerator extends React.Component {
 
   handlePasswordPhrase(e){
     // What wif format do we use?
-    var wifHash = this.props.settings.useTestNet ? hushjs.config.testnet.wif : hushjs.config.mainnet.wif
+    var wifHash = this.props.settings.useTestNet ? config.testnet.wif : config.mainnet.wif
 
-    var pk = hushjs.address.mkPrivKey(e.target.value)
-    var pkwif = hushjs.address.privKeyToWIF(pk, true, wifHash)
+    var pk = address.mkPrivKey(e.target.value)
+    var pkwif = address.privKeyToWIF(pk, true, wifHash)
 
     if (e.target.value === ''){
       pkwif = ''
@@ -699,15 +702,15 @@ class ZSendHUSH extends React.Component {
           }
 
           // Create transaction
-          var txObj = hushjs.transaction.createRawTx(history, recipients)
+          var txObj = transaction.createRawTx(history, recipients)
 
           // Sign each history transcation          
           for (i = 0; i < history.length; i ++){
-            txObj = hushjs.transaction.signTx(txObj, i, senderPrivateKey, this.props.settings.compressPubKey)
+            txObj = transaction.signTx(txObj, i, senderPrivateKey, this.props.settings.compressPubKey)
           }
 
           // Convert it to hex string
-          const txHexString = hushjs.transaction.serializeTx(txObj)
+          const txHexString = transaction.serializeTx(txObj)
 
           axios.post(sendRawTxURL, {rawtx: txHexString})
           .then(function(sendtx_resp){         
@@ -1056,21 +1059,21 @@ export default class ZWallet extends React.Component {
       function _privKeyToAddr(pk, compressPubKey, useTestNet){
         // If not 64 length, probs WIF format
         if (pk.length !== 64){
-          pk = hushjs.address.WIFToPrivKey(pk)          
+          pk = address.WIFToPrivKey(pk)          
         }
 
         // Convert public key to public address
-        const pubKey = hushjs.address.privKeyToPubKey(pk, compressPubKey)
+        const pubKey = address.privKeyToPubKey(pk, compressPubKey)
 
         // Testnet or nah
-        const pubKeyHash = useTestNet ? hushjs.config.testnet.pubKeyHash : hushjs.config.mainnet.pubKeyHash
-        const publicAddr = hushjs.address.pubKeyToAddr(pubKey, pubKeyHash)
+        const pubKeyHash = useTestNet ? config.testnet.pubKeyHash : config.mainnet.pubKeyHash
+        const publicAddr = address.pubKeyToAddr(pubKey, pubKeyHash)
 
         return publicAddr
       }
 
       for (var i = 0; i < this.state.privateKeys.length; i++){
-        const pubKeyHash = this.state.settings.useTestNet ? hushjs.config.testnet.wif : hushjs.config.mainnet.wif
+        const pubKeyHash = this.state.settings.useTestNet ? config.testnet.wif : config.mainnet.wif
         
         var c_pk_wif;
         var c_pk = this.state.privateKeys[i]
@@ -1078,13 +1081,13 @@ export default class ZWallet extends React.Component {
         // If not 64 length, probs WIF format
         if (c_pk.length !== 64){
           c_pk_wif = c_pk
-          c_pk = hushjs.address.WIFToPrivKey(c_pk)
+          c_pk = address.WIFToPrivKey(c_pk)
         }
         else{
-          c_pk_wif = hushjs.address.privKeyToWIF(c_pk)
+          c_pk_wif = address.privKeyToWIF(c_pk)
         }          
 
-        c_pk_wif = hushjs.address.privKeyToWIF(c_pk, true, pubKeyHash)        
+        c_pk_wif = address.privKeyToWIF(c_pk, true, pubKeyHash)        
         const c_addr = _privKeyToAddr(c_pk, this.state.settings.compressPubKey, this.state.settings.useTestNet)        
 
         publicAddresses[c_addr] = {
