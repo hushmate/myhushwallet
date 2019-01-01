@@ -1,6 +1,5 @@
 var bs58check = require('bs58check');
 var secp256k1 = require('secp256k1');
-var int64buffer = require('int64-buffer');
 var varuint = require('varuint-bitcoin');
 var zconfig = require('./config');
 var zbufferutils = require('./bufferutils');
