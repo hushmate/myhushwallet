@@ -3,7 +3,7 @@
 
 // https://github.com/bitcoinjs/bitcoinjs-lib/issues/14
 function numToBytes(num, bytes) {
-  if (bytes == 0) return [];else return [num % 256].concat(numToBytes(Math.floor(num / 256), bytes - 1));
+  if (bytes === 0) return [];else return [num % 256].concat(numToBytes(Math.floor(num / 256), bytes - 1));
 }
 
 function numToVarInt(num) {
