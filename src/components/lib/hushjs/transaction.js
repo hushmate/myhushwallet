@@ -67,8 +67,9 @@ function addressToScript(address) {
 function signatureForm(txObj, i, script, hashcode) {
   // Copy object so we don't rewrite it
   var newTx = JSON.parse(JSON.stringify(txObj));
+  var j;
 
-  for (var j = 0; j < newTx.ins.length; j++) {
+  for (j = 0; j < newTx.ins.length; j++) {
     newTx.ins[j].script = '';
   }
   newTx.ins[i].script = script;
@@ -77,7 +78,7 @@ function signatureForm(txObj, i, script, hashcode) {
     newTx.outs = [];
   } else if (hashcode === zconstants.SIGHASH_SINGLE) {
     newTx.outs = newTx.outs.slice(0, newTx.ins.length);
-    for (var j = 0; j < newTx.ins.length - 1; ++j) {
+    for (j = 0; j < newTx.ins.length - 1; ++j) {
       newTx.outs[j].satoshis = Math.pow(2, 64) - 1;
       newTx.outs[j].script = '';
     }
