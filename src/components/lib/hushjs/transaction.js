@@ -97,6 +97,7 @@ function signatureForm(txObj, i, script, hashcode) {
 function deserializeTx(hexStr) {
   const buf = Buffer.from(hexStr, 'hex');
   var offset = 0;
+  var i;
 
   // Out txobj
   var txObj = {
@@ -108,7 +109,7 @@ function deserializeTx(hexStr) {
   // Vins
   var vinLen = varuint.decode(buf, offset);
   offset += varuint.decode.bytes;
-  for (var i = 0; i < vinLen; i++) {
+  for (i = 0; i < vinLen; i++) {
     const hash = buf.slice(offset, offset + 32);
     offset += 32;
 
@@ -135,7 +136,7 @@ function deserializeTx(hexStr) {
   // Vouts
   var voutLen = varuint.decode(buf, offset);
   offset += varuint.decode.bytes;
-  for (var i = 0; i < voutLen; i++) {
+  for (i = 0; i < voutLen; i++) {
     const satoshis = zbufferutils.readUInt64LE(buf, offset);
     offset += 8;
 
