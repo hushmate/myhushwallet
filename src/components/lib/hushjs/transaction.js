@@ -7,7 +7,6 @@ var zcrypto = require('./crypto');
 var zconstants = require('./constants');
 var zaddress = require('./address');
 var zopcodes = require('./opcodes');
-var zbufferutils = require('./bufferutils');
 
 /* More info: https://github.com/ZencashOfficial/zen/blob/master/src/script/standard.cpp#L377
  * Given an address, generates a pubkeyhash replay type script needed for the transaction
