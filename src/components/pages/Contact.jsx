@@ -58,11 +58,11 @@ export default class ZContact extends React.Component {
               <br/>
                 <div>
                   <p style={styles.center}>
-                    <a href="https://myhush.org/discord/index.html"><Discord size='60'/></a>
-                    <a href="https://twitter.com/MyHushTeam"><Twitter size='60'/></a>
-                    <a href="https://reddit.com/r/Myhush"><Reddit size='60'/></a>
-                    <a href="https://bitcointalk.org/index.php?topic=2008578.0"><Bitcointalk size='60'/></a>
-                    <a href="https://github.com/MyHush"><Github size='60'/></a>
+                    <a href="https://myhush.org/discord/index.html"><Discord size='40'/></a>
+                    <a href="https://twitter.com/MyHushTeam"><Twitter size='40'/></a>
+                    <a href="https://reddit.com/r/Myhush"><Reddit size='40'/></a>
+                    <a href="https://bitcointalk.org/index.php?topic=2008578.0"><Bitcointalk size='40'/></a>
+                    <a href="https://github.com/MyHush"><Github size='40'/></a>
                   </p>
                 </div>
              </p>
