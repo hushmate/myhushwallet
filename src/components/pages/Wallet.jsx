@@ -1040,8 +1040,8 @@ export default class ZWallet extends React.Component {
         showSettings: false,
         showWalletGen: false,
         compressPubKey: true,
-        insightAPI: 'https://explorer.myhush.org/api',
-        explorerURL: 'https://explorer.myhush.org/',
+        insightAPI: 'https://explorer.hush.zelcore.io/api',
+        explorerURL: 'https://explorer.hush.zelcore.io/',
         useTestNet: false,
         unlockType: UNLOCK_WALLET_TYPE.HD_WALLET
       }
@@ -1178,8 +1178,8 @@ export default class ZWallet extends React.Component {
       _settings.explorerURL = 'https://explorer.testnet.myhush.org/'
     }
     else{
-        _settings.insightAPI = 'https://explorer.myhush.org/api'
-        _settings.explorerURL = 'https://explorer.myhush.org/'
+        _settings.insightAPI = 'https://explorer.hush.zelcore.io/api'
+        _settings.explorerURL = 'https://explorer.hush.zelcore.io/'
     }
 
     this.setState({
