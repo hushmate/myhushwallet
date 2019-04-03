@@ -442,7 +442,7 @@ class ZAddressInfo extends React.Component {
       },
       style: { textAlign: "left" },     
       resizable: true,
-      Cell: props => <a href={this.getAddressBlockExplorerURL(props.value)}>{props.value}</a>
+      Cell: props => <a target='_blank' href={this.getAddressBlockExplorerURL(props.value)  }>{props.value}</a>
     }, {
       Header: 'Confirmed',
       accessor: 'confirmedBalance',
