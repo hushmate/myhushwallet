@@ -272,7 +272,7 @@ class ZWalletUnlockKey extends React.Component {
               type={this.state.showPassword ? "text" : "password"}
               maxLength="64"
               onChange={(e) => this.setState({secretPhrase: e.target.value})}
-              placeholder="Secret phrase. e.g. cash cow money heros cardboard money bag late green"
+              placeholder="Secret phrase. e.g. hush puppy washington heros paris money bag time grey"
             />                        
           </InputGroup>
           <div style={{paddingTop: '8px'}}>
