@@ -1040,8 +1040,8 @@ export default class ZWallet extends React.Component {
         showSettings: false,
         showWalletGen: false,
         compressPubKey: true,
-        insightAPI: 'https://explorer.hush.zelcore.io/api',
-        explorerURL: 'https://explorer.hush.zelcore.io/',
+        insightAPI: 'https://hush.explorer.dexstats.info/insight-api-komodo',
+        explorerURL: 'https://hush.explorer.dexstats.info/',
         useTestNet: false,
         unlockType: UNLOCK_WALLET_TYPE.HD_WALLET
       }
