@@ -786,7 +786,7 @@ class ZSendHUSH extends React.Component {
               </InputGroup>
               <InputGroup>
                 <InputGroupAddon>To Address</InputGroupAddon>
-                <Input onChange={this.handleUpdateRecipientAddress} placeholder="e.g t1UDhNq2aEqvxEbPzcRM8n2QJV8YJ664rXJ" />
+                <Input onChange={this.handleUpdateRecipientAddress} placeholder="e.g RHushEyeDm7XwtaTWtyCbjGQumYyV8vMjn" />
               </InputGroup>
               <InputGroup>
                 <InputGroupAddon>Amount</InputGroupAddon>
