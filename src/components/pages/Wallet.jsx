@@ -618,7 +618,7 @@ class ZSendHUSH extends React.Component {
     }
 
     if (recipientAddress.length !== 35) {
-      errString += 'Invalid address. Only transparent addresses are supported at this point in time.;'
+      errString += 'Invalid address.;'
     }
 
     if (typeof parseInt(value) !== 'number' || value === ''){
