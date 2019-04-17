@@ -4,24 +4,24 @@ config.js - Configuration for Hush Coin
 
 module.exports = {
     mainnet: {
-        messagePrefix: 'Hush mainnet',
+        messagePrefix: 'Hush3 mainnet',
         bip32: {
             public: '0488b21e',
             private: '0488ade4'
         },
-        pubKeyHash: '1cb8',
-        scriptHash: '1cbd',
+        pubKeyHash: '3c',
+        scriptHash: '55',
         zcPaymentAddressHash: '169a',
         zcSpendingKeyHash: 'ab36',
         wif: '80'
     },
     testnet: {
-        messagePrefix: 'Hush testnet',
+        messagePrefix: 'Hush3 testnet',
         bip32: {
             public: '043587cf',
             private: '04358394'
         },
-        pubKeyHash: '1d25',
+        pubKeyHash: '3c',
         scriptHash: '1cba',
         zcPaymentAddressHash: '16b6',
         zcSpendingKeyHash: 'ac08',
