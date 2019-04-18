@@ -22,7 +22,7 @@ module.exports = {
             private: '04358394'
         },
         pubKeyHash: '3c',
-        scriptHash: '1cba',
+        scriptHash: '55',
         zcPaymentAddressHash: '16b6',
         zcSpendingKeyHash: 'ac08',
         wif: 'ef'
