@@ -4,7 +4,7 @@ config.js - Configuration for Hush Coin
 
 module.exports = {
     mainnet: {
-        messagePrefix: 'Hush3 mainnet',
+        messagePrefix: 'HUSH mainnet',
         bip32: {
             public: '0488b21e',
             private: '0488ade4'
@@ -16,7 +16,7 @@ module.exports = {
         wif: '80'
     },
     testnet: {
-        messagePrefix: 'Hush3 testnet',
+        messagePrefix: 'HUSH testnet',
         bip32: {
             public: '043587cf',
             private: '04358394'
